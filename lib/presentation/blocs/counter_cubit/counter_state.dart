@@ -6,7 +6,7 @@ class CounterState extends Equatable {
 
   const new({this.counter = 0, this.transactionCount = 0});
 
-  copyWith({int? counter, int? transactionCount}) => CounterState(
+  CounterState copyWith({int? counter, int? transactionCount}) => CounterState(
     counter: counter ?? this.counter,
     transactionCount: transactionCount ?? this.transactionCount,
   );
